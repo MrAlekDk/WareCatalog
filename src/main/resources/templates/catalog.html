@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="fragments/head.html(currentPage='Catalog',stylesheet='/styles/catalog.css')">
+</head>
+<header th:replace="fragments/header.html(pageName='Catalog')"></header>
+<body>
+<section class="catalog">
+    <ul th:each="ware : ${catalog}" class="product">
+        <li class="line">
+            <h2 th:text="|${ware.getName()}|"></h2>
+            <p th:text="|Price:     ${ware.getPrice()}$|"></p>
+            <a th:href="|/update-product/${ware.getId()}|" class="edit-product-button">Edit product</a>
+        </li>
+    </ul>
+</section>
+<section class="add-to-catalog">
+    <a th:href="@{/add-product}" class="add-to-catalog-button">Add new product</a>
+</section>
+<footer th:replace="fragments/Footer.html"></footer>
+</body>
+</html>

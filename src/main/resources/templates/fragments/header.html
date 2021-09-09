@@ -1,0 +1,10 @@
+<header xmlns:th="http://www.w3.org/1999/xhtml">
+    <h1 th:text="${pageName}"></h1>
+    <a th:href="@{/forside}"></a>
+    <nav class="nav-bar">
+        <ul class="ul1">
+            <li class="li"><a th:href="@{/}">Frontpage</a></li>
+            <li class="li"><a th:href="@{/catalog}">Catalog</a></li>
+        </ul>
+    </nav>
+</header>

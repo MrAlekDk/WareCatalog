@@ -1,0 +1,110 @@
+.edit-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.edit-product {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(132, 64, 79,0.7);
+    border: black solid 4px;
+}
+
+h2{
+    background: rgba(255, 255, 255, 0.7);
+    justify-self: center;
+    align-self: center;
+    font-family: "Malgun Gothic";
+    font-size: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+.edit-product label{
+    width: 35%;
+    height: 25px;
+    background: white;
+    justify-self: center;
+    align-self: center;
+    font-family: "Malgun Gothic";
+    font-weight: bold;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.edit-product input{
+    opacity: 100%;
+    width: 25%;
+    height: 40px;
+    font-family: "Malgun Gothic";
+    font-size: 15px;
+    align-self: center;
+    justify-self: center;
+}
+.input-line{
+    display: flex;
+    flex-direction: row;
+    justify-content: center
+}
+
+button{
+    margin-top: 10px;
+    background: white;
+    display: flex;
+    font-family: "Malgun Gothic";
+    width: content-box;
+    margin-bottom: 10px;
+    align-self: center;
+    justify-self: center;
+    border: black solid 2px;
+    border-radius: 3px;
+}
+
+button:hover{
+    background: aliceblue;
+    cursor: pointer;
+}
+
+.cancel-edit{
+    font-size:14px;
+    margin-top: 10px;
+    background: white;
+    display: flex;
+    font-family: "Malgun Gothic";
+    width: content-box;
+    margin-bottom: 10px;
+    align-self: center;
+    justify-self: center;
+    border: black solid 2px;
+    border-radius: 3px;
+}
+
+.cancel-edit:hover{
+    background: aliceblue;
+    cursor: pointer;
+}
+
+.delete-product{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.delete-product-form{
+    margin-top: 25px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    align-self: center;
+    background-color: rgba(132, 64, 79,0.7);
+    border: black solid 4px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="fragments/head.html(currentPage='Edit',stylesheet='/styles/editProduct.css')"></head>
+<body>
+<header th:replace="fragments/header.html(pageName=|Edit product: ${productName}|)"></header>
+<section class="edit-box">
+    <form action="/upload-edit" method="post" class="edit-product">
+        <h2>Product information:</h2>
+        <label for="productID1" hidden></label><br>
+        <input type="number" id="productID1" name="productID1" th:value="${productId}" hidden>
+        <div class="input-line">
+            <label for="productName">New name of product:</label><br>
+            <input type="text" id="productName" name="productName" th:value="${productName}" required><br>
+        </div>
+        <div class="input-line">
+            <label for="productPrice">New Product price:</label><br>
+            <input type="number" id="productPrice" name="productPrice" th:value="${productPrice}" required min="0"><br>
+        </div>
+        <button>Confirm edits</button>
+        <a th:href="@{/catalog}" class="cancel-edit">Cancel editing</a>
+    </form>
+
+</section>
+<section class="delete-product">
+    <form action="/delete-product" method="post" class="delete-product-form">
+        <label for="productID"></label><br>
+        <input type="number" id="productID" name="productID" th:value="${productId}" hidden>
+        <button>Delete product</button>
+    </form>
+</section>
+<footer th:replace="fragments/Footer.html"></footer>
+</body>
+</html>

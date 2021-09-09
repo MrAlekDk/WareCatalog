@@ -1,0 +1,69 @@
+.catalog {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.product {
+    padding-bottom: 10px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background: aliceblue;
+    border: black solid 2px;
+}
+
+.line {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.line p{
+    justify-content: center;
+}
+
+.edit-product-button {
+    margin: 0 auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    background: black;
+    color: white;
+    font-size: 15px;
+}
+
+.edit-product-button:hover {
+    background: black;
+    color: white;
+
+}
+
+.product h2 {
+    align-self: center;
+    justify-self: center;
+    font-family: "Malgun Gothic";
+}
+
+.add-to-catalog {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.add-to-catalog-button {
+    opacity: 60%;
+    justify-self: center;
+    background: black;
+    color: white;
+    font-size: 30px;
+    border: white solid 1px;
+}
+
+.add-to-catalog-button:hover {
+    opacity: 100%;
+}

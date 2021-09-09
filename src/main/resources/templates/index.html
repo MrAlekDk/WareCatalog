@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="fragments/head.html(currentPage='Frontpage',stylesheet='/styles/frontPage.css')">
+</head>
+<header th:replace="fragments/header.html(pageName='Welcome to a webshop!')"></header>
+<body>
+<section class="frontpage-button-center">
+    <a th:href="@{/catalog}" class="frontpage-button">Go to webshop</a>
+</section>
+</body>
+<footer th:replace="fragments/Footer.html"></footer>
+</html>

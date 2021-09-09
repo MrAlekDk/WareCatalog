@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head th:replace="fragments/head.html(currentPage='Create',stylesheet='/styles/createProduct.css')">
+</head>
+<header></header>
+<body>
+<header th:replace="fragments/header.html(pageName='Create new product')"></header>
+<section class="create-box">
+    <form action="/create-product" method="post" class="create-product">
+        <h2>Product information:</h2>
+        <div class="input-line">
+            <label for="productName">Name of product:</label><br>
+            <input type="text" id="productName" name="productName" placeholder="Product name here" required><br>
+        </div>
+        <div class="input-line">
+            <label for="productPrice">Product price:</label><br>
+            <input type="number" id="productPrice" placeholder="Price" name="productPrice" required min="0"><br>
+        </div>
+        <button>Create product</button>
+        <a th:href="@{/catalog}" class="cancel-creation">Cancel product creation</a>
+    </form>
+</section>
+<footer th:replace="fragments/Footer.html"></footer>
+</body>
+</html>
