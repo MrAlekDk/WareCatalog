@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class WareCatalogService {
-
     private HashMap<Integer,Product> listOfProductsMap;
     private ArrayList<Product> allProducts;
     private ProductsRepository pr;

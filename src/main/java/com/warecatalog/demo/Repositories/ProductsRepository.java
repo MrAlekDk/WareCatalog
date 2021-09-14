@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-public class ProductsRepository {
+public class ProductsRepository{
 
     private ConnectionCreator cc;
 
@@ -17,6 +17,7 @@ public class ProductsRepository {
     }
 
     public ArrayList<Product> getAllProducts(){
+
         ArrayList<Product> allProducts = new ArrayList<>();
         Connection con = cc.getCon();
         try {
@@ -41,7 +42,6 @@ public class ProductsRepository {
     public void addNewProduct(Product newProduct) {
         Connection con = cc.getCon();
         try {
-
             PreparedStatement stmt = con.prepareStatement("INSERT INTO Catalog (WareName,WarePrice) VALUES (?,?)");
 
             stmt.setString(1, newProduct.getName());

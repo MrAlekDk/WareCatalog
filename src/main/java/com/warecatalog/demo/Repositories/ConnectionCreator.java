@@ -36,6 +36,7 @@ public class ConnectionCreator {
             con = DriverManager.getConnection(url, user, password);
         } catch (SQLException throwables) {
             throwables.printStackTrace();
+            con = null;
         }
     }
 
